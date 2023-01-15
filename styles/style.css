@@ -140,22 +140,176 @@ body{
 }
 
 
+/* experience section styles  */
+
+.experience-container{
+   display: flex;
+   align-items: center;
+   gap: 50px;
+}
+
+.experience-detail{
+   margin: 80px 30px 50px 180px;
+}
+
+.experience-title{
+   font-weight: 700;
+   font-size: 35px;
+   border-left: 3.5px solid var(--orange);
+   padding-left: 8px;
+}
+
+.experience-desc, .variety-desc{
+   font-weight: 400;
+   font-size: 16px;
+   color: var(--gray);
+   margin: 20px 0;
+}
+
+.variety{
+   box-shadow: 5px 5px 15px rgb(236, 229, 229);
+   padding: 30px 35px 20px 15px;
+}
+.variety-title{
+   font-weight: 600;
+   font-size: 20px;
+}
+
+.experience-image{
+   margin: 0 100px 0 0;
+}
+
+.experience-image img{
+   max-width: 620px;
+   height: 800px;
+}
+
+.experience-btn{
+   width: 210px;
+   height: 110px;
+   border-radius: 8px;
+   border: none;
+   background-color: var(--orange);
+   color: var(--white);
+   font-weight: 700;
+   font-size: 30px;
+   margin: 0 auto;
+   margin-top: -80px;
+   margin-left: -50px;
+}
+
+#text{
+   font-size: 17px;
+   font-weight: 500;
+}
+
+
+/* facts section styles  */
+
+.facts-detail{
+   margin: 80px 0 50px 180px;
+}
+
+.facts-title{
+   font-weight: bold;
+   font-size: 40px;
+}
+
+.facts-desc{
+   font-weight: 400;
+   font-size: 16px;
+   color: var(--gray);
+   margin: 20px 0;
+}
+
+.transition{
+   margin: 0 auto;
+   align-items: center;
+   margin-left: 320px;
+}
+
+.fact{
+   border: 1px solid var(--orange);
+   text-align: center;
+   align-items: center;
+   margin: 40px 30px 150px;
+   border-radius: 8px;
+   background-color: var(--white);
+   height: 140px;
+   width: 140px;
+   transition: width 3s, height 3s, transform 3s;
+}
+
+.customer{
+   border: 0;
+}
+
+.fact-title{
+   font-weight: 500;
+   font-size: 20px;
+   margin: 10px 0 5px;
+   color: #424242;
+}
+
+.face-desc{
+   color: #727272;
+   font-size: 14px;
+}
+
+.fact:hover{
+   width: 180px;
+   height: 180px;
+   transform: rotate(30deg);
+}
+
+.customer:hover{
+   transform: rotate(-20deg);
+}
+
+
 
  /* media query  */
 
  @media only screen and (max-width:576px) {
-    
+   
+   /* nav query styles  */
+
    nav ul{
         flex-direction: column;
         gap: 15px;
         padding-top: 100px;
    }
 
+   nav ul li{
+      font-weight: 500;
+      font-size: 14px;
+   }  
+
+   .nav-title{
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+
+   /* banner query styles  */
+
+   .banner-title {
+      font-weight: 700;
+      font-size: 35px;
+    } 
+
+    .banner-desc {
+      font-size: 15px;
+    }
+
    .banner-image{
         width: 100%;
         height: 100%;
         margin: 0 auto;
    }
+
+
+   /* feature section query styles  */
 
    .features-container{
          flex-wrap: wrap;
@@ -179,4 +333,79 @@ body{
       color: var(--gray);
       margin: 24px 8px;
    }
+
+
+   /* experience section query styles  */
+
+   .experience-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      margin-top: 80px
+   }
+
+   .experience-detail{
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+   }
+
+   .experience-image{
+      padding: 0 0;
+      margin: 30px auto;
+   }
+
+   .experience-image img{
+      width: 100%;
+      height: auto;
+   }
+
+   .experience-btn{
+      width: 150px;
+      height: 50px;
+      border-radius: 8px;
+      border: none;
+      background-color: var(--orange);
+      color: var(--white);
+      font-weight: 400;
+      font-size: 14px;
+      margin: 25px 0 25px 130px;
+      padding: 0;
+   }
+
+
+   /* fact section query styles  */
+
+   .facts{
+      margin-top: 60px;
+   }
+
+   .facts-detail{
+      margin: 0 auto;
+      text-align: center;
+   }
+    .fact-title{
+      font-size: 15px;
+    }
+   
+   .facts-desc{
+      font-size: 13px;
+      color: var(--gray);
+   }
+   
+   .transition{
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 80px;
+   }
+   
+   .fact{
+      margin: 0 auto;
+   }
+   
 }

@@ -268,29 +268,6 @@ body{
 }
 
 
-/* sponsor section styles  */
-
-.sponsor{
-   text-align: center;
-}
-
-.sponsor-header{
-   font-weight: 600;
-   font-size: 20px;
-}
-
-.sponsor-description{
-   margin: 15px 0 25px;
-   font-size: 16px;
-   color: var(--gray);
-}
-
-.sponsor-gallery img{
-   margin: 30px 40px;
-   filter: grayscale(100%);
-}
-
-
 /* extra section styles  */
 
 .services-container{
@@ -323,6 +300,29 @@ body{
    width: 200px;
    border-radius: 8px;
    margin-top: 20px;
+}
+
+
+/* sponsor section styles  */
+
+.sponsor{
+   text-align: center;
+}
+
+.sponsor-header{
+   font-weight: 600;
+   font-size: 20px;
+}
+
+.sponsor-description{
+   margin: 15px 0 25px;
+   font-size: 16px;
+   color: var(--gray);
+}
+
+.sponsor-gallery img{
+   margin: 30px 40px;
+   filter: grayscale(100%);
 }
 
 
@@ -447,9 +447,12 @@ footer{
    .experience-image button{
       width: 150px;
       height: 50px;
-      font-weight: 400;
-      font-size: 14px;
+      font-size: 15px;
       margin: 50px -160px;
+   }
+
+   #text{
+      font-size: 13px;
    }
 
 

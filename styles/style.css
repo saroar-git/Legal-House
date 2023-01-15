@@ -405,7 +405,7 @@ footer{
    }
 
    .feature-detail{
-         margin: 0 auto;
+         margin: 30px auto 0;
          padding: 0;
          text-align: center;
    }

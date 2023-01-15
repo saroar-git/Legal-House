@@ -167,11 +167,22 @@ body{
    margin: 20px 0;
 }
 
+.variety-desc{  
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+   white-space: pre-wrap;
+   cursor: pointer;
+  }
+
 .variety{
    box-shadow: 5px 5px 15px rgb(236, 229, 229);
    padding: 30px 35px 20px 15px;
    border-radius: 8px;
 }
+
 .variety-title{
    font-weight: 600;
    font-size: 20px;
